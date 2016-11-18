@@ -9,3 +9,6 @@ c:\users\wexer admin\documents\visual studio 2015\Projects\DeviceSubChannelApp\D
 c:\users\wexer admin\documents\visual studio 2015\Projects\DeviceSubChannelApp\DeviceSubChannelApp\bin\Debug\Ibt.Ortc.Api.dll
 c:\users\wexer admin\documents\visual studio 2015\Projects\DeviceSubChannelApp\DeviceSubChannelApp\bin\Debug\Ibt.Ortc.Api.Extensibility.dll
 c:\users\wexer admin\documents\visual studio 2015\Projects\DeviceSubChannelApp\DeviceSubChannelApp\obj\Debug\DeviceSubChannelApp.csprojResolveAssemblyReference.cache
+C:\Users\Wexer admin\Documents\GitHub\githubtester\DeviceSubChannelApp\DeviceSubChannelApp\bin\Debug\DeviceSubChannelApp.exe.config
+C:\Users\Wexer admin\Documents\GitHub\githubtester\DeviceSubChannelApp\DeviceSubChannelApp\obj\Debug\DeviceSubChannelApp.exe
+C:\Users\Wexer admin\Documents\GitHub\githubtester\DeviceSubChannelApp\DeviceSubChannelApp\obj\Debug\DeviceSubChannelApp.pdb
