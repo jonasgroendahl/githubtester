@@ -64,7 +64,7 @@ namespace DeviceSubChannelApp
             // when we called it below :)
             //Thread.Sleep(5000);
             //ortc_OnConnected(null);
-            // hello2
+            // hello2 !!!
 
             // DONT LOAD GUI
             //InitializeComponent();
