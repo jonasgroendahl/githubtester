@@ -65,7 +65,8 @@ namespace DeviceSubChannelApp
             //Thread.Sleep(5000);
             //ortc_OnConnected(null);
             // DONT LOAD GUI
-            // testerino
+            // testerino1
+            // tsterino2
             //InitializeComponent();
         }
 
