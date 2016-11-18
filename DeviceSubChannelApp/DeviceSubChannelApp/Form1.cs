@@ -66,6 +66,7 @@ namespace DeviceSubChannelApp
             //ortc_OnConnected(null);
             // DONT LOAD GUI
             //InitializeComponent();
+            //branch1 siger hej
         }
 
         private void Form1_Load(object sender, EventArgs e)
