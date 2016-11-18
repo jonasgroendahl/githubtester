@@ -1,21 +1,19 @@
 # githubtester
 
 PROGRAM : 
-devices:*
+Realtime.co program
 
-DEAL WITH CONFLICTS:
+DEAL WITH CONFLICTS WITHOUT USING GITHUB EXTENSION:
 https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/
 
-GUIDE :
-
+GUIDE HOW BRANCHES & COMMIT/PULL WORK :
 https://guides.github.com/activities/hello-world/ 
 
 HOW TO:
 
 1.Download github app  
-2.Copy files from web page 
+2.Copy files from web page  
 3.Create Branch and open the project using VS from the GitHub App  
-4.Save Changes
-5.Commit using Github VS extension https://visualstudio.github.com/  
-6.PULL hvis det skal overføres til en anden branch "master"
-  6.1 afvikle pulls på hjemmeside
+4.Commit using Github VS extension https://visualstudio.github.com/ and push to server  
+(OPTIONAL)
+5.Pull to overwrite another branch with current branch
