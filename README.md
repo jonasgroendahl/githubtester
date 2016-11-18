@@ -3,6 +3,9 @@
 PROGRAM : 
 devices:*
 
+DEAL WITH CONFLICTS:
+https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/
+
 GUIDE :
 
 https://guides.github.com/activities/hello-world/  
