@@ -66,6 +66,7 @@ namespace DeviceSubChannelApp
             //ortc_OnConnected(null);
             // DONT LOAD GUI
             // testerino1
+            // tsterino2
             //InitializeComponent();
         }
 
