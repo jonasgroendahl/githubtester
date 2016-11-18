@@ -20,6 +20,7 @@ namespace WindowsFormsApplication4
         private void button1_Click(object sender, EventArgs e)
         {
             Console.WriteLine("Hej");
+            Console.WriteLine("Ses");
         }
     }
 }
