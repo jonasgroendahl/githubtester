@@ -67,6 +67,7 @@ namespace DeviceSubChannelApp
             // DONT LOAD GUI
             //InitializeComponent();
             //branch1 siger hej
+            //branch1 siger hej igen
         }
 
         private void Form1_Load(object sender, EventArgs e)
