@@ -5,3 +5,4 @@ En lille test
 
 EDIT FRA COMP1
 EDIT FRA COMP1 igen
+go go go
