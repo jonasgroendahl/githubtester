@@ -1,7 +1,7 @@
 # githubtester
 
 PROGRAM : 
-Error log program, Density Api test(density api), Channel listening device App(realtime.co api)
+Error log program, Density Api test(density api), Channel listening App for device(realtime.co api)
 
 github test app:
 WindowsApplication4
