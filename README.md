@@ -1,11 +1,11 @@
 # githubtester
 
-PROGRAM :  
+Programs:  
 Error log program  
 Density Api test(density api)  
 Channel listening App for device(realtime.co api)
 
-github test app:  
+Github test app:  
 WindowsApplication4
 
 DEAL WITH CONFLICTS WITHOUT USING GITHUB EXTENSION:
@@ -14,7 +14,7 @@ https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-lin
 GUIDE HOW BRANCHES & COMMIT/PULL WORK :
 https://guides.github.com/activities/hello-world/ 
 
-HOW TO:
+How to Github (notes for self):  
 
 1.Download github app  
 2.Copy files from web page  
