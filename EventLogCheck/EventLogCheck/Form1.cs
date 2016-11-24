@@ -27,9 +27,12 @@ namespace EventLogCheck
             Console.WriteLine(args[1]);
             whatErr = args[1];
             printErrors();
+            dostuff();
+            Environment.Exit(1);
             //button1.PerformClick();
 
         }
+
 
 
         private void button1_Click(object sender, EventArgs e)
@@ -123,7 +126,7 @@ namespace EventLogCheck
             //Console.WriteLine("Number of event log entries: "+aLog.Entries.Count.ToString());
             // }
             EventLogEntryCollection col = myE.Entries;
-            file2.WriteLine("<html><head><meta http-equiv=\"Content - Type\" content=\"text / html; charset = UTF - 8\"/></head><body bgcolor =#000000  leftmargin=2 topmargin=2 bottommargin=2 rightmargin=2>");
+            //file2.WriteLine("<html><head><meta http-equiv=\"Content - Type\" content=\"text / html; charset = UTF - 8\"/></head><body bgcolor =#000000  leftmargin=2 topmargin=2 bottommargin=2 rightmargin=2>");
             for (int i = 0; i < col.Count; i++)
             {
                 EventLogEntry entry = col[i];
@@ -159,8 +162,43 @@ namespace EventLogCheck
                     }
                 }
             }
-            file2.WriteLine("</ body ></ html >");
+            //file2.WriteLine("</ body ></ html >");
             file2.Close(); // http://stackoverflow.com/questions/12735897/streamwriter-is-cutting-off-my-last-couple-of-lines-sometimes-in-the-middle-of-a
            }
+
+        private void dostuff()
+        {
+
+            string pathR = Environment.CurrentDirectory + @"\systemlog.html";
+            string pathW = Environment.CurrentDirectory + @"\systemlog2.html";
+            //var fs = File.OpenRead(pathR);
+            int fileLength = File.ReadAllLines(pathR).Length;
+            //fs.Position = fileLength;
+            StreamReader sread = new StreamReader(pathR);
+            string[] strArr = new string[fileLength];
+            int j = fileLength-1;
+            Console.WriteLine(fileLength);
+            for (int i = 0; i < fileLength; i ++)
+            {
+                string line = sread.ReadLine();
+                strArr[j] = line;
+                j = j -1;
+                Console.WriteLine(j);
+            }
+            sread.Close();
+            StreamWriter swrite = new StreamWriter(pathW);
+            swrite.Flush();
+            swrite.WriteLine("<html><head><meta http-equiv=\"Content - Type\" content=\"text / html; charset = UTF - 8\"/></head><body bgcolor =#000000  leftmargin=2 topmargin=2 bottommargin=2 rightmargin=2>");
+            for (int i = 0; i < fileLength; i ++)
+            {
+                swrite.WriteLine(strArr[i]);
+            }
+            swrite.WriteLine("</ body ></ html >");
+            swrite.Close();
+            File.Delete(pathR);
+            File.Move(pathW, pathR);
+            //File.Replace(pathW, pathR,Environment.CurrentDirectory);
+           }
+
         }
 }

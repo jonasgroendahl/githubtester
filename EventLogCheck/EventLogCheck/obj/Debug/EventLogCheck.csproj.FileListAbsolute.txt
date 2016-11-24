@@ -7,3 +7,12 @@ c:\users\wexer admin\documents\visual studio 2015\Projects\EventLogCheck\EventLo
 c:\users\wexer admin\documents\visual studio 2015\Projects\EventLogCheck\EventLogCheck\obj\Debug\EventLogCheck.csproj.GenerateResource.Cache
 c:\users\wexer admin\documents\visual studio 2015\Projects\EventLogCheck\EventLogCheck\obj\Debug\EventLogCheck.exe
 c:\users\wexer admin\documents\visual studio 2015\Projects\EventLogCheck\EventLogCheck\obj\Debug\EventLogCheck.pdb
+C:\Users\Jonas\Documents\GitHub\githubtester\EventLogCheck\EventLogCheck\bin\Debug\EventLogCheck.exe.config
+C:\Users\Jonas\Documents\GitHub\githubtester\EventLogCheck\EventLogCheck\obj\Debug\EventLogCheck.exe
+C:\Users\Jonas\Documents\GitHub\githubtester\EventLogCheck\EventLogCheck\obj\Debug\EventLogCheck.pdb
+C:\Users\Jonas\Documents\GitHub\githubtester\EventLogCheck\EventLogCheck\bin\Debug\EventLogCheck.exe
+C:\Users\Jonas\Documents\GitHub\githubtester\EventLogCheck\EventLogCheck\bin\Debug\EventLogCheck.pdb
+C:\Users\Jonas\Documents\GitHub\githubtester\EventLogCheck\EventLogCheck\obj\Debug\EventLogCheck.csprojResolveAssemblyReference.cache
+C:\Users\Jonas\Documents\GitHub\githubtester\EventLogCheck\EventLogCheck\obj\Debug\EventLogCheck.Form1.resources
+C:\Users\Jonas\Documents\GitHub\githubtester\EventLogCheck\EventLogCheck\obj\Debug\EventLogCheck.Properties.Resources.resources
+C:\Users\Jonas\Documents\GitHub\githubtester\EventLogCheck\EventLogCheck\obj\Debug\EventLogCheck.csproj.GenerateResource.Cache
