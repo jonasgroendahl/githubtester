@@ -1,0 +1,101 @@
+unit uDensity;
+
+interface
+
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, IdHTTP,IdSSLOpenSSL, System.JSON;
+
+  //http://docs.density.io/
+type
+  TForm1 = class(TForm)
+    Button1: TButton;
+    Label1: TLabel;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  token : string;
+  client : TIdHTTP;
+  server : string;
+  result : string;
+  jArr: TJSONArray;
+  jObj : TJSONObject;
+  jStr : TJSONString;
+  jVal : TJSONValue;
+  LHandler : TIdSSLIOHandlerSocketOpenSSL;
+begin
+  client := TIdHTTP.Create();
+  LHandler := TIdSSLIOHandlerSocketOpenSSL.Create();
+  client.IOHandler := LHandler;
+  client.AllowCookies := true;
+  // split in 3 due to error >>too long string<<
+  token := 'eyJhbGciOiJFUzM4NCIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE0NzU4NTIzMDQsImF1dGgiOnsib3JncyI6W3sicGVybXMiOlsiYXBpLm1hbmFnZV9lbnYiLCJhcGkudmlld19lbnYiXSwiaWQiOiIyY1BhVmo2cUpJZkhkampkNXlXbHZGIiwibmFtZSI6IldleGVyIFZpcnR1YWwifV19L'+'CJ1c2VyIjp7Imxhc3QiOiIyY1BhVmo2cUpJZkhkampkNXlXbHZGIiwiZW1haWwiOiIyY1BhVmo2cUpJZkh'+'kampkNXlXbHZGQGRlbnNpdHkuaW8iLCJmaXJzdCI6Ik9SR19VU0VSIn0sImV4cCI6MjUzNDAyMzAwNzk5fQ.Ltdpg8GxjD3D9a-LOhpUHSoHFmRcmZrFoLX08+''+_CuOoz84Ln00crf9k7oEqksNssKi6ebmdVGjlufT0sXQ7QLSdaBoojiLst5O4XhafkerMay3KQzCLqLMdf4JJoYPKKc';
+  //  Request -> Specifies the header values to send to the HTTP server.
+  // http://stackoverflow.com/questions/38272627/how-to-add-a-authorization-bearer-header-with-indy-in-delphi
+  client.Request.CustomHeaders.Values['Authorization']:= 'Bearer '+token;
+  server := 'https://sandbox.density.io/v1/spaces/';
+  try
+      result := client.Get(server);
+  except
+    on E : Exception do
+      ShowMessage(E.Message);
+      // 400 Bad Request, 403 Forbidden, 404 Not Found, 409 Conflict
+
+  end;
+  ShowMessage(result);
+  // http://stackoverflow.com/questions/15947774/getting-json-data-from-a-website-using-delphi/15948106#15948106
+  // http://stackoverflow.com/questions/35748913/get-specific-value-from-json-string-delphi-xe8
+  // EXTRACT JSON STRING
+  // Looking to get count of spaces
+  (*
+ {
+  "count": 2,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "id": "55kmCsy9SMbP1mkTKNYYt4",
+      "name": "Office",
+      "timezone": "-05:00",
+      "current_count": 5,
+      "tags": [
+        "tech_garden"
+      ]
+    },
+    {
+      "id": "5bGPVAmYKbcDTVuzuMogJp",
+      "name": "Conference Room",
+      "timezone": "-05:00",
+      "current_count": 2,
+      "tags": [
+        "tech_garden"
+      ]
+    }
+  ]
+}
+*)
+  //jObj := TJSONObject.ParseJSONValue(result) as TJSONObject;
+  //jArr := jObj.GetValue('results') as TJSONArray;
+  //jVal := jObj.GetValue('count') as TJSONValue;
+  //ShowMessage('count: '+ jVal.ToString());
+  //jStr := jArr.Get(0) as TJSONString;
+  // Get is "deprecated" http://docwiki.embarcadero.com/Libraries/Berlin/en/System.JSON.TJSONArray.Get
+  //ShowMessage('id for first space: '+jStr.ToString());
+
+end;
+
+end.

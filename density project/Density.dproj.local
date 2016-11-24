@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.464,C:\Users\Wexer admin\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Wexer admin\Documents\Embarcadero\Studio\Projects\density project\uDensity.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.100,=C:\Users\Wexer admin\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.464,C:\Users\Wexer admin\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Wexer admin\Documents\Embarcadero\Studio\Projects\density project\uDensity.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.630,C:\Users\Wexer admin\Documents\Embarcadero\Studio\Projects\density project\density.dfm=C:\Users\Wexer admin\Documents\Embarcadero\Studio\Projects\density project\uDensity.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.556,C:\Users\Wexer admin\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Wexer admin\Documents\Embarcadero\Studio\Projects\density project\Density.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.650,C:\Users\Wexer admin\Documents\Embarcadero\Studio\Projects\density project\uDensity.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.630,C:\Users\Wexer admin\Documents\Embarcadero\Studio\Projects\density project\density.pas=C:\Users\Wexer admin\Documents\Embarcadero\Studio\Projects\density project\uDensity.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.495,=C:\Users\Wexer admin\Documents\Embarcadero\Studio\Projects\density project\density.pas</Transaction>
+  </Transactions>
+</BorlandProject>
