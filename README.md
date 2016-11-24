@@ -1,9 +1,11 @@
 # githubtester
 
-PROGRAM : 
-Error log program, Density Api test(density api), Channel listening App for device(realtime.co api)
+PROGRAM :  
+Error log program  
+Density Api test(density api)  
+Channel listening App for device(realtime.co api)
 
-github test app:
+github test app:  
 WindowsApplication4
 
 DEAL WITH CONFLICTS WITHOUT USING GITHUB EXTENSION:
